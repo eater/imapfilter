@@ -28,7 +28,7 @@ become_daemon(600, forever)
 
 while true do
     myaccount.mymailbox:enter_idle()
-    results = myaccount.mymailbox:is_unread()
+    results = myaccount.mymailbox:is_unseen()
     results:move_messages(myaccount.myothermailbox)
 end
 
